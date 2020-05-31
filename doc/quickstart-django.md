@@ -139,7 +139,10 @@ TIME_ZONE = env('TIME_ZONE')
 >>> c.delete()
 ```
 
-
+### Creating an admin user
+```
+(venv) $ python manage.py createsuperuser
+```
 
 
 
