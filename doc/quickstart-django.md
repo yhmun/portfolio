@@ -30,7 +30,7 @@ $ source venv/bin/activate
 
 ### Installing dependecies from requirements file
 ```
-(venv) $ pip install -r requirements
+(venv) $ pip install -r requirements.txt
 ```
 
 ### Deactivating the virtual environment
@@ -44,6 +44,7 @@ $ source venv/bin/activate
        - pip install asgiref                # ASGI specs, helper code, and adapters
        - pip install pytz                   # World timezone definitions, modern and historical
        - pip install sqlparse               # Non-validating SQL parser
+(venv) $ pip install psycopg2-binary        # psycopg2 - Python-PostgreSQL Database Adapter       
 ```
 
 ### Creating a project
