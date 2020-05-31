@@ -111,7 +111,33 @@ TIME_ZONE = env('TIME_ZONE')
 ...
 ```
 
+### Database Migration
+```
+(venv) $ python manage.py makemigrations polls
+(venv) $ python manage.py sqlmigrate polls 0001
+(venv) $ python manage.py migrate
+```
 
+### Shell
+```
+>>> from polls.models import Choice, Question
+
+>>> Question.objects.all()
+
+>>> from django.utils import timezone
+>>> q = Question(question_text="What's new?", pub_date=timezone.now())
+>>> q.save()
+
+>>> Question.objects.filter(id=1)
+>>> Question.objects.filter(question_text__startswith='What')
+
+>>> Question.objects.get(pk=1)
+
+>>> q.choice_set.all()
+>>> q.choice_set.create(choice_text='The sky', votes=0)
+>>> q.choice_set.count()
+>>> c.delete()
+```
 
 
 
