@@ -25,7 +25,7 @@ $ docker network prune              # Remove all unused networks
 ### Excute
 ```
 $ docker exec -it                   # Run a command in a running container
-$ docker exec -it postgres psql --username='postgres' --dbname='web'
+$ docker exec -it postgres psql --username='postgres' --dbname='portfolio'
 ```
 
 ### Run 

@@ -49,11 +49,11 @@ $ source venv/bin/activate
 
 ### Creating a project
 ```
-(venv) $ django-admin startproject mysite .
+(venv) $ django-admin startproject portfolio .
 
 (venv) $ tree .
 ├── manage.py
-├── mysite
+├── portfolio
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
@@ -69,14 +69,6 @@ sudo apt-get install tree -y
 
 ```
 
-### Changing App Settings
-```
-(venv) $ vi app/settings.py
-...
-TIME_ZONE = 'America/Toronto'
-...
-```
-
 ### The development server
 ```
 (venv) $ python manage.py runserver 0:8000
@@ -84,9 +76,9 @@ TIME_ZONE = 'America/Toronto'
 
 ### Creating your own app
 ```
-(venv) $ python manage.py startapp portfolio
-(venv) $ tree portfolio
-portfolio/
+(venv) $ python manage.py startapp app_homepage
+(venv) $ tree app_homepage
+app_homepage/
 ├── __init__.py
 ├── admin.py
 ├── apps.py
@@ -96,6 +88,29 @@ portfolio/
 ├── tests.py
 └── views.py
 ```
+
+### Changing App Settings
+```
+(venv) $ vi app/settings.py
+...
+import environ
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+environ.Env.read_env()
+
+DEBUG = env('DEBUG')
+
+SECRET_KEY = env('SECRET_KEY')
+
+DATABASES = {
+    'default': env.db()
+}
+
+TIME_ZONE = env('TIME_ZONE')
+...
+```
+
 
 
 

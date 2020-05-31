@@ -7,7 +7,7 @@ $ docker-compose build                  # Build or rebuild services.
 ```
 $ docker-compose exec                   # Execute a command in a running container
 $ docker-compose exec web /bin/bash
-$ docker-compose exec db psql --username='postgres' --dbname='web'
+$ docker-compose exec db psql --username='postgres' --dbname='portfolio'
 ```
 
 ### Service
