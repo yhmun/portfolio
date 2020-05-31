@@ -2,7 +2,7 @@ sftp-config.json
 __pycache__/
 venv/
 
-db.sqlite3
-
 .env
 .env.db
+migrations
+db.sqlite3
