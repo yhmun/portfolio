@@ -4,5 +4,4 @@ venv/
 
 .env
 .env.db
-migrations
 db.sqlite3
