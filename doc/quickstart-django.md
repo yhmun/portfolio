@@ -44,7 +44,8 @@ $ source venv/bin/activate
        - pip install asgiref                # ASGI specs, helper code, and adapters
        - pip install pytz                   # World timezone definitions, modern and historical
        - pip install sqlparse               # Non-validating SQL parser
-(venv) $ pip install psycopg2-binary        # psycopg2 - Python-PostgreSQL Database Adapter       
+(venv) $ pip install psycopg2-binary        # psycopg2 - Python-PostgreSQL Database Adapter
+(venv) $ pip install djangorestframework    # Web APIs for Django, made easy.
 ```
 
 ### Creating a project
