@@ -145,6 +145,11 @@ TIME_ZONE = env('TIME_ZONE')
 (venv) $ python manage.py createsuperuser
 ```
 
+### curl command
+```
+(venv) $ curl -sS http://127.0.0.1:8000/receipts/ | python -m json.tool
+(venv) $ curl -H "Content-Type: application/json" http://localhost:8000/receipts -d '{}'
+```
 
 
 
