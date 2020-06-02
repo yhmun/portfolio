@@ -77,9 +77,9 @@ sudo apt-get install tree -y
 
 ### Creating your own app
 ```
-(venv) $ python manage.py startapp app_homepage
-(venv) $ tree app_homepage
-app_homepage/
+(venv) $ python manage.py startapp main
+(venv) $ tree main
+main/
 ├── __init__.py
 ├── admin.py
 ├── apps.py
