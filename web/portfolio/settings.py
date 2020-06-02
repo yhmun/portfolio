@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'main',
     'puppies',
     'receipts',
-    'polls.apps.PollsConfig',
+    'polls',
 ]
 
 MIDDLEWARE = [
