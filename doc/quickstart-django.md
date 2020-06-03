@@ -47,6 +47,7 @@ $ source venv/bin/activate
 (venv) $ pip install psycopg2-binary        # psycopg2 - Python-PostgreSQL Database Adapter
 (venv) $ pip install djangorestframework    # Web APIs for Django, made easy.
 (venv) $ pip install Pillow                 # Python Imaging Library (Fork)
+(venv) $ pip install gunicorn               # WSGI HTTP Server for UNIX
 ```
 
 ### Creating a project
