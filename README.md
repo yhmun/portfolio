@@ -1,5 +1,5 @@
 ## Portflio Web Application
-This purposes for practising builing web applicaiton on cloud.
+This purposes for practising building a web applicaiton on cloud.
 
 ## Prerequisite 
 - Ubuntu 18.04 LTS (option)
