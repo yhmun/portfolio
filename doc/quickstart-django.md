@@ -46,6 +46,7 @@ $ source venv/bin/activate
        - pip install sqlparse               # Non-validating SQL parser
 (venv) $ pip install psycopg2-binary        # psycopg2 - Python-PostgreSQL Database Adapter
 (venv) $ pip install djangorestframework    # Web APIs for Django, made easy.
+(venv) $ pip install Pillow                 # Python Imaging Library (Fork)
 ```
 
 ### Creating a project

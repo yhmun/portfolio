@@ -16,6 +16,8 @@ $ docker-compose up -d                  # Builds, (re)creates, starts, and attac
 $ docker-compose up --build
 $ docker-compose up --no-build
 $ docker-compose up --no-start
+$ docker-compose up -d db
+$ docker-compose up web
 $ docker-compose -f docker-compose.prod.yml up -d
 ```
 ```

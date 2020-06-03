@@ -31,6 +31,7 @@ $ docker exec -it postgres psql --username='postgres' --dbname='portfolio'
 ### Run 
 ```
 $ docker run                        # Run a command in a new container
+$ docker run -it --rm portfolio:custom /bin/bash
 ```
 
 ### Build

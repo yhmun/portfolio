@@ -12,6 +12,17 @@ services:
       - postgres_volume:/var/lib/postgresql/data/
     env_file:
       - .env.db
+  web:
+    build: ./web
+    image: portfolio:custom
+    container_name: web
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - db
 
 volumes:
   postgres_volume:
