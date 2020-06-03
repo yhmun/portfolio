@@ -7,4 +7,5 @@ sftp-config.json
 Dockerfile
 __pycache__/
 venv/
-media/
+staticfiles/
+mediafiles/

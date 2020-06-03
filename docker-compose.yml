@@ -18,7 +18,10 @@ services:
     container_name: web
     restart: unless-stopped
     ports:
-      - 8000:8000 
+      - 8000:8000
+    volumes:
+      - static_volume:/var/www/staticfiles/
+      - media_volume:/var/www/mediafiles/
     env_file:
       - .env
     depends_on:
@@ -30,8 +33,13 @@ services:
     restart: unless-stopped
     ports:
       - 80:80
+    volumes:
+      - static_volume:/var/www/staticfiles/
+      - media_volume:/var/www/mediafiles/
     depends_on:
       - web
 
 volumes:
   postgres_volume:
+  static_volume:
+  media_volume:

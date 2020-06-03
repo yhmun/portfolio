@@ -7,7 +7,10 @@ $ docker-compose build                  # Build or rebuild services.
 ```
 $ docker-compose exec                   # Execute a command in a running container
 $ docker-compose exec web /bin/bash
+$ docker-compose exec web python manage.py createsuperuser
+$ docker-compose exec web python manage.py migrate
 $ docker-compose exec db psql --username='postgres' --dbname='portfolio'
+$ docker-compose exec nginx ls /var/www
 ```
 
 ### Service
