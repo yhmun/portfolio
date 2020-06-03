@@ -40,12 +40,9 @@ $ docker-compose exec web python manage.py createsuperuser
 ```
 $ docker-compose exec web python manage.py migrate
 ```
-- Explore web application
-```
-http://localhost:8000
-http://localhost
-http://localhost/admin
-```
+- Explore on your webb browser
+  http://[localhost|<domain name>]
+  http://[localhost|<domain name>]/admin
 
 ## Getting Started for standalone development
 - Create environmental file
@@ -72,3 +69,5 @@ $ source venv/bin/activate
 (venv) $ python manage.py migrate
 (venv) $ python manage.py runserver 0:8000
 ```
+- Explore on your web browser
+  http://localhost:8000
