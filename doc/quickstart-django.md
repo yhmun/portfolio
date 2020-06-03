@@ -117,6 +117,9 @@ TIME_ZONE = env('TIME_ZONE')
 (venv) $ python manage.py makemigrations polls
 (venv) $ python manage.py sqlmigrate polls 0001
 (venv) $ python manage.py migrate
+(venv) $ python manage.py showmigrations
+(venv) $ python manage.py migrate --fake projects zero
+(venv) $ python manage.py migrate projects zero
 ```
 
 ### Shell
