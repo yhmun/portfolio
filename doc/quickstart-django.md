@@ -48,6 +48,7 @@ $ source venv/bin/activate
 (venv) $ pip install djangorestframework    # Web APIs for Django, made easy.
 (venv) $ pip install Pillow                 # Python Imaging Library (Fork)
 (venv) $ pip install gunicorn               # WSGI HTTP Server for UNIX
+(venv) $ pip install django-cleanup         # Deletes old files
 ```
 
 ### Creating a project
